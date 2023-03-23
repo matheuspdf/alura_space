@@ -40,8 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'galeria.apps.GaleriaConfig',
-    'usuarios.apps.UsuariosConfig',
+
+
+    'apps.galeria.apps.GaleriaConfig',
+    'apps.usuarios.apps.UsuariosConfig',
 ]
 
 MIDDLEWARE = [
@@ -144,5 +146,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
-    messages.SUCCESS: 'success',
+    messages.SUCCESS: 'success'
 }
